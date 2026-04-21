@@ -23,4 +23,4 @@ spec:
     path: gitops/clusters/production
     ref: refs/heads/master
     url: https://github.com/huseyinbabal/docker-kubernetes-for-developers
-    pullSecret: flux-git-credentials
+    pullSecret: flux-system

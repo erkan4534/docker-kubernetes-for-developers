@@ -1,8 +1,7 @@
 ---
-hetzner_token: ... 
-cluster_name: training
+cluster_name: docker-kubernetes
 kubeconfig_path: "./kubeconfig"
-k3s_version: v1.33.4+k3s1
+k3s_version: v1.35.3+k3s1
 
 networking:
   ssh:
@@ -47,7 +46,7 @@ schedule_workloads_on_masters: false
 # snapshot_os: microos # optional: specified the os type when using a custom snapshot
 
 masters_pool:
-  instance_type: cpx11
+  instance_type: cx23
   instance_count: 3
   locations:
     - fsn1
@@ -67,7 +66,7 @@ worker_node_pools:
   #   - key: something
   #     value: value1:NoSchedule
   - name: worker
-    instance_type: cx22
+    instance_type: cx33
     instance_count: 1
     location: nbg1
     autoscaling:
